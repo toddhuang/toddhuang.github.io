@@ -20,10 +20,9 @@
   
     <link rel="icon" href="/favicon.png">
   
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   
-
 </head>
 <body>
   <div id="container">
@@ -51,6 +50,9 @@
         
       </nav>
       <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/toddhuang" target="_blank"></a>
+        <a id="nav-linkedin-link" class="nav-icon" href="https://cn.linkedin.com/pub/todd-huang/2a/b5/289" target="_blank"></a>
+        <a id="nav-googleplus-link" class="nav-icon" href="https://plus.google.com/118397119893301296093" target="_blank"></a>
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
@@ -71,6 +73,10 @@
   <time datetime="2015-08-13T14:00:00.000Z" itemprop="datePublished">2015-08-13</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -87,142 +93,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="字符串">字符串</h1><h2 id="基本用法类似列表和元组">基本用法类似列表和元组</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line">print(string)</span><br><span class="line">print(string[:<span class="number">5</span>])</span><br><span class="line">print(string[:<span class="number">5</span>] + <span class="string">'AAA'</span> + string[<span class="number">5</span>:])</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(string)</span></span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(string[:<span class="number">5</span>])</span></span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(string[:<span class="number">5</span>] + <span class="string">'AAA'</span> + string[<span class="number">5</span>:])</span></span></span><br></pre></td></tr></table></figure></p>
-<h2 id="capitalize()">capitalize()</h2><p>首字母大写</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line">print(string.capitalize())</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Abcdefghijklmn</span><br></pre></td></tr></table></figure></p>
-<p>####casefold<br>所有字母变小写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;BCDFbadfda&#39;&#10;print(string.casefold())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdfbadfda</span><br></pre></td></tr></table></figure></p>
-<p>####center<br>将字符串居中,并使用空格填充至width处</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;BCDFbadfda&#39;&#10;print(string.center(50))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BCDFbadfda</span><br></pre></td></tr></table></figure></p>
-<p>####count<br>返回子字符串在整个字符串中指定位置出现的次数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abcabcabcabcabcabcabcabcabcabc&#39;&#10;print(string.count(&#39;abc&#39;))&#10;print(string.count(&#39;abc&#39;, 3))&#10;print(string.count(&#39;abc&#39;, 3, 9))&#10;print(string.count(&#39;abc&#39;, 3, 12))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10&#10;9&#10;2&#10;3</span><br></pre></td></tr></table></figure></p>
-<p>####encode<br>按照encoding指定的编码格式对字符串进行编码</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;&#25105;&#26159;&#20320;&#29240;&#29240;&#39;&#10;print(string)&#10;print(string.encode(encoding=&#39;GBK&#39;))&#10;print(string.encode(encoding=&#39;utf-8&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#25105;&#26159;&#20320;&#29240;&#29240;&#10;b&#39;\xce\xd2\xca\xc7\xc4\xe3\xb0\xd6\xb0\xd6&#39;&#10;b&#39;\xe6\x88\x91\xe6\x98\xaf\xe4\xbd\xa0\xe7\x88\xb8\xe7\x88\xb8&#39;</span><br></pre></td></tr></table></figure></p>
-<p>####endwith<br>测试字符串是否以sub串结尾,可以指定位置</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abcdefg&#39;&#10;print(string.endswith(&#39;ef&#39;))&#10;print(string.endswith(&#39;fg&#39;))&#10;print(string.endswith(&#39;ef&#39;, 0, 6))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">False&#10;True&#10;True</span><br></pre></td></tr></table></figure></p>
-<p>####expendtabs<br>将字符串中的tab转换成空格,如果不指定默认是8</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;a\tbc\tdef\tghij&#39;&#10;print(string)&#10;print(string.expandtabs())&#10;print(string.expandtabs(4))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a&#9;bc&#9;def&#9;ghij&#10;a       bc      def     ghij&#10;a   bc  def ghij</span><br></pre></td></tr></table></figure></p>
-<p>####find<br>检查sub是否在字符串中,有则返回第一次出现的位置,否则返回-1<br>无论是否给出start end, 返回的都是绝对位置,而不是针对start的相对位置</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abc abcd abcde&#39;&#10;print(string.find(&#39;abc&#39;))&#10;print(string.find(&#39;abcd&#39;))&#10;print(string.find(&#39;abcd&#39;, 4, 8))&#10;print(string.find(&#39;abcd&#39;, 4, 7))&#10;print(string.find(&#39;dfd&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0&#10;4&#10;4&#10;-1&#10;-1</span><br></pre></td></tr></table></figure></p>
-<p>####index<br>与find方法类似,但是如果没找到则会抛出异常</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abc abcd abcde&#39;&#10;print(string.index(&#39;abc&#39;))&#10;print(string.index(&#39;abcd&#39;))&#10;print(string.index(&#39;dfd&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0&#10;4&#10;Traceback (most recent call last):&#10;  File &#34;/Users/huangtodd/PycharmProjects/helloworld/helloworld.py&#34;, line 4, in &#60;module&#62;&#10;    print(string.index(&#39;dfd&#39;))&#10;ValueError: substring not found</span><br></pre></td></tr></table></figure></p>
-<p>####isalnum<br>判断字符串是否仅仅包含字母和数组</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;123ab&#39;&#10;print(string.isalnum())&#10;string = &#39;ab123ab&#39;&#10;print(string.isalnum())&#10;string = &#39;abc 123ab&#39;&#10;print(string.isalnum())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;True&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####isalpha<br>判断字符串是否仅仅包含字母</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abfdf&#39;&#10;print(string.isalpha())&#10;string = &#39;ab123ab&#39;&#10;print(string.isalpha())&#10;string = &#39;abc 123ab&#39;&#10;print(string.isalpha())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####isdecimal<br>判断字符串是否仅仅包含十进制数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;123&#39;&#10;print(string.isdecimal())&#10;string = &#39;123.3&#39;&#10;print(string.isdecimal())&#10;string = &#39;0x123&#39;&#10;print(string.isdecimal())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####isdigit, isnumeric<br>和isdecimal基本类似都是判断是否是数字.<br>但是不同的是isnumeric可以判断其他语言的数字<br>byte object只能用isdigit</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">num = b&#34;123&#34;  # byte&#10;print(num.isdigit())  # True&#10;# print(num.isdecimal())  # AttributeError &#39;bytes&#39; object has no attribute &#39;isdecimal&#39;&#10;# print(num.isnumeric())  # AttributeError &#39;bytes&#39; object has no attribute &#39;isnumeric&#39;&#10;print()&#10;&#10;num = &#34;&#22235;&#34;  # &#27721;&#23383;&#10;print(num.isdigit())  # False&#10;print(num.isdecimal())  # False&#10;print(num.isnumeric())  # True</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;&#10;False&#10;False&#10;True</span><br></pre></td></tr></table></figure></p>
-<p>####islower, isupper<br>islower 判断字符串中包含字母是否全部为小写<br>isupper 判断字符串中包含字母是否全部为大写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abcd&#39;&#10;print(string.islower())&#10;&#10;string = &#39;ABCD&#39;&#10;print(string.isupper())&#10;&#10;string = &#39;abcABC&#39;&#10;print(string.islower())&#10;print(string.isupper())&#10;&#10;string = &#39;123abc&#39;&#10;print(string.islower())&#10;print(string.isupper())&#10;&#10;string = &#39;123ABC&#39;&#10;print(string.islower())&#10;print(string.isupper())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;True&#10;False&#10;False&#10;True&#10;False&#10;False&#10;True</span><br></pre></td></tr></table></figure></p>
-<p>####isspace<br>字符串是否只包含空格</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39; &#39;&#10;print(string.isspace())&#10;&#10;string = &#39;123abc&#39;&#10;print(string.isspace())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####istitle<br>是否所有的单词仅仅首字母都大写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd&#39;&#10;print(string.istitle())&#10;&#10;string = &#39;ToddHuang&#39;&#10;print(string.istitle())&#10;&#10;string = &#39;Todd Huang&#39;&#10;print(string.istitle())&#10;&#10;string = &#39;Todd huang&#39;&#10;print(string.istitle())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False&#10;True&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####join<br>将字符串本身做为间隔插入到sub中去</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd&#39;&#10;print(string.join(&#39;|&#39;))&#10;print(string.join(&#39;||&#39;))&#10;print(string.join(&#39;|||&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">|&#10;|Todd|&#10;|Todd|Todd|</span><br></pre></td></tr></table></figure></p>
-<p>####ljust<br>左对齐后面补足width长度的空格</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd&#39;&#10;print(string.ljust(10))&#10;string = &#39;Todd123456&#39;&#10;print(string.ljust(10))&#10;string = &#39;Todd1234&#39;&#10;print(string.ljust(10))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Todd      &#10;Todd123456&#10;Todd1234</span><br></pre></td></tr></table></figure></p>
-<p>####lower, upper<br>lower所有字母小写<br>upper所有字母大写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;ToddHuang&#39;&#10;print(string.lower())&#10;print(string.upper())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">toddhuang&#10;TODDHUANG</span><br></pre></td></tr></table></figure></p>
-<p>####lstrip, rstrip<br>lstrip 去除左边所有空格<br>rstrip 去除右边所有空格</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;          ToddHuang    &#39;&#10;print(string.lstrip())&#10;print(string.rstrip())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ToddHuang    &#10;          ToddHuang</span><br></pre></td></tr></table></figure></p>
-<p>####partition<br>找到sub并以sub为分隔将字符串变为3个元组</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd Tommy&#39;&#10;print(string.partition(&#39; &#39;))&#10;&#10;string = &#39;Todd Tommy Sam&#39;&#10;print(string.partition(&#39; &#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(&#39;Todd&#39;, &#39; &#39;, &#39;Tommy&#39;)&#10;(&#39;Todd&#39;, &#39; &#39;, &#39;Tommy Sam&#39;)</span><br></pre></td></tr></table></figure></p>
-<p>####replace<br>字符串替换,并可以指定替换次数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd Todd&#39;&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 0))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 1))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 2))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 3))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">todd todd&#10;Todd Todd&#10;todd Todd&#10;todd todd&#10;todd todd</span><br></pre></td></tr></table></figure></p>
-<p>####rfind, rindex, rjust, rpartition<br>都是对应函数的右起操作</p>
-<p>####split<br>默认以空格来对字符串进行切片处理,切割成列表<br>也可是指定切割符号,也可是指定切割次数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd Joyce Ketty&#39;&#10;print(string.split())&#10;print(string.split(&#39; &#39;, maxsplit=1))&#10;print(string.split(&#39; &#39;, 1))&#10;print(string.split(sep=None, maxsplit=1))&#10;&#10;string = &#39;Todd,Joyce,Ketty&#39;&#10;print(string.split(&#39;,&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Todd&#39;, &#39;Joyce&#39;, &#39;Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce&#39;, &#39;Ketty&#39;]</span><br></pre></td></tr></table></figure></p>
-<p>####splitlines<br>以换行符\n来切割字符串列表</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd\nJoyce\nKetty&#39;&#10;print(string.splitlines())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd\nJoyce\nKetty&#39;&#10;print(string.splitlines())</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-
+        <h1 id="字符串">字符串</h1><p>基本用法类似列表和元组<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/08/13/python学习笔记3/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://toddhuang.github.io/2015/08/13/python学习笔记3/" data-id="cidabpexd0001tcpglb2obe1z" class="article-share-link">Share</a>
+      <a data-url="http://toddhuang.github.io/2015/08/13/python学习笔记3/" data-id="cidafa3ch0001egpge65z8xj6" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
     </footer>
   </div>
   
@@ -236,6 +120,10 @@
   <time datetime="2015-08-12T14:00:00.000Z" itemprop="datePublished">2015-08-12</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -254,63 +142,20 @@
       
         <h1 id="列表">列表</h1><ol>
 <li>列表是一个对象的容器</li>
-<li>列表内放置的对象类型并不唯一</li>
-</ol>
-<h2 id="普通列表">普通列表</h2><p>类似普通的数组</p>
-<h2 id="混合列表">混合列表</h2><p>元素类型不唯一</p>
-<h2 id="空列表">空列表</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 普通列表</span></span><br><span class="line">member = [<span class="string">'Todd'</span>, <span class="string">'Tom'</span>, <span class="string">'Bill'</span>, <span class="string">'Tommy'</span>, <span class="string">'Tony'</span>]</span><br><span class="line">number = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 混合列表</span></span><br><span class="line">mix = [<span class="string">'Todd'</span>, <span class="number">1</span>, <span class="string">'Tom'</span>, <span class="number">2</span>, <span class="string">'Bill'</span>, <span class="number">3</span>, <span class="string">'Tommy'</span>, <span class="number">4</span>, <span class="string">'Tony'</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 空列表</span></span><br><span class="line">empty = []</span><br></pre></td></tr></table></figure>
-<h2 id="列表添加元素的方法">列表添加元素的方法</h2><h3 id="append">append</h3><p>只能添加单一元素</p>
-<h3 id="extend">extend</h3><p>将列表对象添加至当前列表末尾</p>
-<h3 id="insert">insert</h3><p>在列表指定位置插入元素</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">member.append(<span class="string">'Peter'</span>)</span><br><span class="line">member.extend([<span class="string">'Sam'</span>, <span class="string">'Charil'</span>])</span><br><span class="line">member.insert(<span class="number">0</span>, <span class="string">'Boss'</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="从列表中获取元素">从列表中获取元素</h3><p>可以根据索引值，就是数组下标</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">temp = member[<span class="number">0</span>]</span><br><span class="line">member[<span class="number">0</span>] = member[<span class="number">1</span>]</span><br><span class="line">member[<span class="number">1</span>] = temp</span><br></pre></td></tr></table></figure>
-<h2 id="从列表中删除元素">从列表中删除元素</h2><h3 id="remove">remove</h3><p>必须清楚元素的名字，不需要知道具体的位置</p>
-<h3 id="del">del</h3><p>删除指定位置的元素,当然也可以删除整个列表</p>
-<h3 id="pop">pop</h3><p>推出列表最后一个元素<br>也可以pop指定位置的元素</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">member.remove(<span class="string">'Todd'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> member[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">name = member.pop()</span><br><span class="line">print(name)</span><br><span class="line"></span><br><span class="line">name = member.pop(<span class="number">2</span>)</span><br><span class="line">print(name)</span><br></pre></td></tr></table></figure>
-<h2 id="列表分片_slice">列表分片 slice</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">print(member)</span><br><span class="line">print(member[<span class="number">1</span>:<span class="number">3</span>])</span><br><span class="line">print(member[:<span class="number">3</span>])</span><br><span class="line">print(member[<span class="number">1</span>:])</span><br><span class="line">print(member[:])</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">['Boss', 'Bill', 'Tony', 'AAA', 'BBB', 'CCC', 'Peter', 'Sam']</span><br><span class="line">['Bill', 'Tony']</span><br><span class="line">['Boss', 'Bill', 'Tony']</span><br><span class="line">['Bill', 'Tony', 'AAA', 'BBB', 'CCC', 'Peter', 'Sam']</span><br><span class="line">['Boss', 'Bill', 'Tony', 'AAA', 'BBB', 'CCC', 'Peter', 'Sam']</span><br></pre></td></tr></table></figure></p>
-<h2 id="列表常用操作符">列表常用操作符</h2><ol>
-<li>比较操作符</li>
-<li>逻辑操作符</li>
-<li>连接操作符</li>
-<li>重复操作符</li>
-<li>成员关系操作符</li>
-</ol>
-<h3 id="比较操作符">比较操作符</h3><p>列表在判断大小时，往往是比较列表的第一个元素</p>
-<h3 id="逻辑操作符">逻辑操作符</h3><p>in 在 not in 不在， 但是需要注意不能跨层</p>
-<h3 id="连接操作符">连接操作符</h3><p>+ 类似列表的extends</p>
-<h3 id="重复操作符">重复操作符</h3><p>* 将列表重复多次</p>
-<h3 id="成员关系操作符">成员关系操作符</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="number">123</span>]</span><br><span class="line">list2 = [<span class="number">234</span>]</span><br><span class="line">print(list1 &gt; list2)</span><br><span class="line"></span><br><span class="line">list1 = [<span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">list2 = [<span class="number">234</span>, <span class="number">123</span>]</span><br><span class="line">print(list1 &gt; list2)</span><br><span class="line"></span><br><span class="line">list3 = [<span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">print((list1 &lt; list2) <span class="keyword">and</span> (list1 == list3))</span><br><span class="line"></span><br><span class="line">list4 = list1 + list2</span><br><span class="line">print(list4)</span><br><span class="line"></span><br><span class="line">print(list3)</span><br><span class="line">print(list3 * <span class="number">3</span>)</span><br><span class="line">list3 *= <span class="number">3</span></span><br><span class="line">print(list3)</span><br><span class="line">list3 *= <span class="number">5</span></span><br><span class="line">print(list3)</span><br><span class="line"></span><br><span class="line">print(<span class="number">123</span> <span class="keyword">in</span> list3)</span><br><span class="line">print(<span class="number">123</span> <span class="keyword">not</span> <span class="keyword">in</span> list3)</span><br><span class="line">print(<span class="number">789</span> <span class="keyword">not</span> <span class="keyword">in</span> list3)</span><br><span class="line">print(<span class="string">'aaa'</span> <span class="keyword">not</span> <span class="keyword">in</span> list3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print()</span><br><span class="line">list = [<span class="number">123</span>, [<span class="string">'Todd'</span>, <span class="string">'Joyce'</span>], <span class="number">456</span>]</span><br><span class="line">print(<span class="string">'Todd'</span> <span class="keyword">in</span> list)</span><br><span class="line">print(<span class="string">'Todd'</span> <span class="keyword">in</span> list[<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">False</span><br><span class="line">False</span><br><span class="line">True</span><br><span class="line">[<span class="number">123</span>, <span class="number">456</span>, <span class="number">234</span>, <span class="number">123</span>]</span><br><span class="line">[<span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">[<span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">[<span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">[<span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">True</span><br><span class="line">False</span><br><span class="line">True</span><br><span class="line">True</span><br><span class="line"></span><br><span class="line">False</span><br><span class="line">True</span><br></pre></td></tr></table></figure></p>
-<h2 id="列表内置BIF">列表内置BIF</h2><h3 id="count">count</h3><p>返回指定元素出现次数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print()</span><br><span class="line">print(list3.count(<span class="number">123</span>))</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">15</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="index">index</h3><p>返回指定元素第一次出现的位置<br>还可以指定元素第一次出现的范围</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(list3.index(<span class="number">123</span>))</span><br><span class="line">print(list3.index(<span class="number">123</span>, <span class="number">3</span>, <span class="number">7</span>))</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="reverse">reverse</h3><p>将列表元素逆序排列</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(list3)</span><br><span class="line">list3.reverse()</span><br><span class="line">print(list3)</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>]</span><br><span class="line">[<span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>, <span class="number">456</span>, <span class="number">123</span>]</span><br></pre></td></tr></table></figure></p>
-<h3 id="sort">sort</h3><p>将列表元素排序</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">number = [<span class="number">4</span>, <span class="number">2</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">9</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">1</span>]</span><br><span class="line">number.sort()</span><br><span class="line">print(number)</span><br><span class="line">number.sort(reverse=<span class="keyword">True</span>)</span><br><span class="line">print(number)</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure></p>
-<h3 id="copy">copy</h3><p>= 类似获取引用，并不发生真实数据复制<br>而copy则会发生内存copy，copy后内容是放在新开辟的内存空间</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'='</span>)</span><br><span class="line">number1 = number</span><br><span class="line">print(number)</span><br><span class="line">print(number1)</span><br><span class="line">number.sort()</span><br><span class="line">print(number)</span><br><span class="line">print(number1)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'[:]'</span>)</span><br><span class="line">number2 = number[:]</span><br><span class="line">print(number)</span><br><span class="line">print(number2)</span><br><span class="line">number.sort(reverse=<span class="keyword">True</span>)</span><br><span class="line">print(number)</span><br><span class="line">print(number2)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'copy'</span>)</span><br><span class="line">number2 = number.copy()</span><br><span class="line">print(number)</span><br><span class="line">print(number2)</span><br><span class="line">number.sort()</span><br><span class="line">print(number)</span><br><span class="line">print(number2)</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">=</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">[:]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">copy</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">[<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure></p>
-<h1 id="元组_Tuple">元组 Tuple</h1><p>元组和列表在使用上基本相同，但是元组是不能修改的<br>不可以给元组的元素赋值</p>
-<h2 id="创建和访问一个元组">创建和访问一个元组</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">tuple1 = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>)</span><br><span class="line">print(tuple1)</span><br><span class="line">print(tuple1[<span class="number">1</span>])</span><br><span class="line">print(tuple1[<span class="number">5</span>:])</span><br><span class="line">print(tuple1[:<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line">temp = (<span class="number">1</span>)</span><br><span class="line">print(type(temp))</span><br><span class="line">temp = <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span></span><br><span class="line">print(type(temp))</span><br><span class="line">temp = []</span><br><span class="line">print(type(temp))</span><br><span class="line">temp = (<span class="number">1</span>,)</span><br><span class="line">print(type(temp))</span><br><span class="line">temp = <span class="number">1</span>,</span><br><span class="line">print(type(temp))</span><br><span class="line"></span><br><span class="line">print(<span class="number">8</span> * (<span class="number">8</span>))</span><br><span class="line">print(<span class="number">8</span> * (<span class="number">8</span>,))</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1, 2, 3, 4, 5, 6, 7, 8)&#10;2&#10;(6, 7, 8)&#10;(1, 2, 3, 4, 5)&#10;&#60;class &#39;int&#39;&#62;&#10;&#60;class &#39;tuple&#39;&#62;&#10;&#60;class &#39;list&#39;&#62;&#10;&#60;class &#39;tuple&#39;&#62;&#10;&#60;class &#39;tuple&#39;&#62;&#10;64&#10;(8, 8, 8, 8, 8, 8, 8, 8)</span><br></pre></td></tr></table></figure></p>
-<h2 id="更新和删除一个元组">更新和删除一个元组</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">temp = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">7</span>)</span><br><span class="line">print(temp)</span><br><span class="line">temp = temp[:<span class="number">3</span>] + (<span class="number">4</span>, <span class="number">5</span>) + temp[<span class="number">3</span>:]</span><br><span class="line">print(temp)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> temp</span><br><span class="line">print(temp)</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(1, 2, 3, 6, 7)&#10;(1, 2, 3, 4, 5, 6, 7)&#10;Traceback (most recent call last):&#10;  File &#34;C:/Users/toddhuang/PycharmProjects/HelloWorld/HelloWorld.py&#34;, line 10, in &#60;module&#62;&#10;    print(temp)&#10;NameError: name &#39;temp&#39; is not defined</span><br></pre></td></tr></table></figure></p>
-
+<li>列表内放置的对象类型并不唯一
+        
+          <p class="article-more-link">
+            <a href="/2015/08/12/python学习笔记2/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://toddhuang.github.io/2015/08/12/python学习笔记2/" data-id="cidabpewo0000tcpg0g0w2bly" class="article-share-link">Share</a>
+      <a data-url="http://toddhuang.github.io/2015/08/12/python学习笔记2/" data-id="cidafa3cj0002egpgi8sed7kv" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
     </footer>
   </div>
   
@@ -324,6 +169,10 @@
   <time datetime="2015-08-11T14:00:00.000Z" itemprop="datePublished">2015-08-11</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -340,87 +189,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="字符串处理">字符串处理</h1><h2 id="原始字符串">原始字符串</h2><p>在处理大量的需要转义的字符串时可以使用 r</p>
-<p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">filename=<span class="string">r'c:\work\sample.c'</span></span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">c</span>:\work\sample.<span class="built_in">c</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="长字符串处理">长字符串处理</h2><p>在处理多行字符串时可以采用 “””</p>
-<p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">longstr = <span class="string">"""</span><br><span class="line">Hello World</span><br><span class="line">Good day</span><br><span class="line">See you again</span><br><span class="line">"""</span></span><br><span class="line">print(longstr)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Hello World</span><br><span class="line">Good <span class="property">day</span></span><br><span class="line">See you again</span><br></pre></td></tr></table></figure></p>
-<h2 id="结合使用">结合使用</h2><p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">longstr = <span class="string">r"""</span><br><span class="line">"Hello, world"</span><br><span class="line">Good day</span><br><span class="line">See you again</span><br><span class="line">"""</span></span><br><span class="line">print(longstr)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Hello, world"</span></span><br><span class="line">Good <span class="property">day</span></span><br><span class="line">See you again</span><br></pre></td></tr></table></figure></p>
-<h1 id="逻辑控制分支">逻辑控制分支</h1><p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">a = random.randint(<span class="number">1</span>, <span class="number">10</span>)</span><br><span class="line">b = random.randint(<span class="number">1</span>, <span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> a == b:</span><br><span class="line">    print(<span class="string">"a == b"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">if</span> a &gt; b:</span><br><span class="line">        print(<span class="string">"a &gt; b"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"a &lt; b"</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'a = '</span> + str(a))</span><br><span class="line">print(<span class="string">'b = '</span> + str(b))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">a</span> &lt; <span class="tag">b</span></span><br><span class="line"><span class="tag">a</span> = <span class="number">3</span></span><br><span class="line"><span class="tag">b</span> = <span class="number">9</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="数据类型">数据类型</h1><ul>
-<li>整形 int</li>
-<li>浮点型    float</li>
-<li>布尔类型 bool</li>
-<li>e记法 e</li>
-<li>字符串 str</li>
-</ul>
-<h2 id="BIF转换函数">BIF转换函数</h2><ul>
-<li>int</li>
-<li>str</li>
-<li>float</li>
-</ul>
-<h2 id="获取数据类型">获取数据类型</h2><ul>
-<li>type()</li>
-<li>isinstance()</li>
-</ul>
-<p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">'aaaa'</span></span><br><span class="line">print(type(a))</span><br><span class="line">print(isinstance(a, str))</span><br><span class="line">print(isinstance(a, int))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">class</span> <span class="string">'str'</span>&gt;</span><br><span class="line"><span class="keyword">True</span></span><br><span class="line"><span class="keyword">False</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="操作符及优先级">操作符及优先级</h1><h2 id="算术操作符">算术操作符</h2><ul>
-<li>+    加</li>
-<li>-    减</li>
-<li>*    乘</li>
-<li>/    除</li>
-<li>%    取余</li>
-<li>**    幂</li>
-<li>//    地板除法</li>
-</ul>
-<h2 id="比较操作符">比较操作符</h2><ul>
-<li>>        大于</li>
-<li>&lt;        小于</li>
-<li>==    相等</li>
-<li>!=    不等</li>
-</ul>
-<h2 id="逻辑操作符">逻辑操作符</h2><ul>
-<li>and</li>
-<li>or</li>
-<li>not</li>
-</ul>
-<h2 id="优先级问题">优先级问题</h2><ol>
-<li>幂运算</li>
-<li>正负号</li>
-<li>算术操作符</li>
-<li>比较操作符</li>
-<li>逻辑运算符</li>
-</ol>
-<h1 id="防止悬挂else">防止悬挂else</h1><p>Example 1<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">L1 = <span class="keyword">True</span></span><br><span class="line">L2 = <span class="keyword">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> L1:</span><br><span class="line">    print(<span class="string">'Level 1 True'</span>)</span><br><span class="line">    <span class="keyword">if</span> L2:</span><br><span class="line">        print(<span class="string">'Level 2 True'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Level 2 False'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Level</span> <span class="number">1</span> <span class="keyword">True</span></span><br><span class="line"><span class="keyword">Level</span> <span class="number">2</span> <span class="keyword">False</span></span><br></pre></td></tr></table></figure></p>
-<p>Example 2<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">L1 = <span class="keyword">False</span></span><br><span class="line">L2 = <span class="keyword">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> L1:</span><br><span class="line">    print(<span class="string">'Level 1 True'</span>)</span><br><span class="line">    <span class="keyword">if</span> L2:</span><br><span class="line">        print(<span class="string">'Level 2 True'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Level 2 False'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Level</span> <span class="number">2</span> <span class="keyword">False</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="条件分支">条件分支</h1><p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">L1 = <span class="keyword">False</span></span><br><span class="line">L2 = <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> L1:</span><br><span class="line">    print(<span class="string">'Level 1 True'</span>)</span><br><span class="line"><span class="keyword">elif</span> L2:</span><br><span class="line">    print(<span class="string">'Level 2 True'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'Level 2 False'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Level</span> <span class="number">2</span> <span class="keyword">True</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="条件表达式">条件表达式</h1><p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x, y = <span class="number">4</span>, <span class="number">5</span></span><br><span class="line"><span class="keyword">if</span> x &lt; y:</span><br><span class="line">    small = x</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    small = y</span><br><span class="line">print(small)</span><br><span class="line"></span><br><span class="line">small = x <span class="keyword">if</span> x &lt; y <span class="keyword">else</span> y</span><br><span class="line">print(small)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="断言">断言</h1><p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span> <span class="number">3</span> &gt; <span class="number">4</span></span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent <span class="operator"><span class="keyword">call</span> <span class="keyword">last</span>):</span><br><span class="line">  <span class="keyword">File</span> <span class="string">"C:/Users/toddhuang/PycharmProjects/HelloWorld/HelloWorld.py"</span>, line <span class="number">3</span>, <span class="keyword">in</span> &lt;<span class="keyword">module</span>&gt;</span><br><span class="line">    assert <span class="number">3</span> &gt; <span class="number">4</span></span><br><span class="line">AssertionError</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="while循环">while循环</h1><h2 id="语法">语法</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> 条件：</span><br><span class="line">	循环体</span><br></pre></td></tr></table></figure>
-<h1 id="for循环">for循环</h1><h2 id="语法-1">语法</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> 目标 <span class="keyword">in</span> 表达式：</span><br><span class="line">	循环体</span><br></pre></td></tr></table></figure>
-<p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">'Todd.Huang'</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> name:</span><br><span class="line">    print(i, end=<span class="string">' '</span>)</span><br><span class="line">print()</span><br><span class="line"></span><br><span class="line">nameList = [<span class="string">'Todd.Huang'</span>, <span class="string">'Joyce.Mao'</span>]</span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> nameList:</span><br><span class="line">    print(each, len(nameList))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> each <span class="keyword">in</span> nameList:</span><br><span class="line">    print(each, len(each))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">T o d d . H u <span class="tag">a</span> n g </span><br><span class="line">Todd<span class="class">.Huang</span> <span class="number">2</span></span><br><span class="line">Joyce<span class="class">.Mao</span> <span class="number">2</span></span><br><span class="line">Todd<span class="class">.Huang</span> <span class="number">10</span></span><br><span class="line">Joyce<span class="class">.Mao</span> <span class="number">9</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="rang()">rang()</h1><h2 id="语法-2">语法</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">range([start,] stop[, step=<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
-<p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    print(i)</span><br><span class="line">print()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">5</span>):</span><br><span class="line">    print(i)</span><br><span class="line">print()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">5</span>, <span class="number">2</span>):</span><br><span class="line">    print(i)</span><br><span class="line">print()</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="break_&amp;_continue">break &amp; continue</h2><p>Code<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        print(i)</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    i += <span class="number">2</span></span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">11</span></span><br></pre></td></tr></table></figure></p>
-
+        <h1 id="字符串处理">字符串处理</h1><h2 id="原始字符串">原始字符串</h2><p>在处理大量的需要转义的字符串时可以使用 r<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/08/11/python学习笔记1/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://toddhuang.github.io/2015/08/11/python学习笔记1/" data-id="cidabk1oe00016opgdf8ck3ro" class="article-share-link">Share</a>
+      <a data-url="http://toddhuang.github.io/2015/08/11/python学习笔记1/" data-id="cidafa3bq0000egpg4ufyjev0" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
     </footer>
   </div>
   
@@ -434,23 +216,8 @@
           <aside id="sidebar">
   
     
-  
-    
-  
-    
-  
-    
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
+    <h3 class="widget-title">Recent posts</h3>
     <div class="widget">
       <ul>
         
@@ -467,6 +234,24 @@
           </li>
         
       </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Python/" style="font-size: 10px;">Python</a>
     </div>
   </div>
 
@@ -501,6 +286,13 @@
 
 
 <script src="/js/script.js" type="text/javascript"></script>
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
 
   </div>
 </body>

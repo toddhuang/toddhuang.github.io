@@ -5,29 +5,25 @@
   
   <title>python学习笔记03 | Todd.Huang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="字符串基本用法类似列表和元组1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print(string[:5] + &apos;AAA&apos; + string[5:])
-Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print(string[:5] + &apos;AAA">
+  <meta name="description" content="字符串基本用法类似列表和元组">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python学习笔记03">
 <meta property="og:url" content="http://toddhuang.github.io/2015/08/13/python学习笔记3/index.html">
 <meta property="og:site_name" content="Todd.Huang's Blog">
-<meta property="og:description" content="字符串基本用法类似列表和元组1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print(string[:5] + &apos;AAA&apos; + string[5:])
-Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print(string[:5] + &apos;AAA">
-<meta property="og:updated_time" content="2015-08-13T15:15:59.958Z">
+<meta property="og:description" content="字符串基本用法类似列表和元组">
+<meta property="og:updated_time" content="2015-08-13T18:31:59.065Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python学习笔记03">
-<meta name="twitter:description" content="字符串基本用法类似列表和元组1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print(string[:5] + &apos;AAA&apos; + string[5:])
-Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print(string[:5] + &apos;AAA">
+<meta name="twitter:description" content="字符串基本用法类似列表和元组">
   
     <link rel="alternative" href="/atom.xml" title="Todd.Huang&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   
-
 </head>
 <body>
   <div id="container">
@@ -55,6 +51,9 @@ Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print
         
       </nav>
       <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/toddhuang" target="_blank"></a>
+        <a id="nav-linkedin-link" class="nav-icon" href="https://cn.linkedin.com/pub/todd-huang/2a/b5/289" target="_blank"></a>
+        <a id="nav-googleplus-link" class="nav-icon" href="https://plus.google.com/118397119893301296093" target="_blank"></a>
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
@@ -73,6 +72,10 @@ Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print
   <time datetime="2015-08-13T14:00:00.000Z" itemprop="datePublished">2015-08-13</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -89,142 +92,118 @@ Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="字符串">字符串</h1><h2 id="基本用法类似列表和元组">基本用法类似列表和元组</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line">print(string)</span><br><span class="line">print(string[:<span class="number">5</span>])</span><br><span class="line">print(string[:<span class="number">5</span>] + <span class="string">'AAA'</span> + string[<span class="number">5</span>:])</span><br></pre></td></tr></table></figure>
+        <h1 id="字符串">字符串</h1><p>基本用法类似列表和元组<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line">print(string)</span><br><span class="line">print(string[:<span class="number">5</span>])</span><br><span class="line">print(string[:<span class="number">5</span>] + <span class="string">'AAA'</span> + string[<span class="number">5</span>:])</span><br></pre></td></tr></table></figure></p>
 <p>Output<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(string)</span></span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(string[:<span class="number">5</span>])</span></span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(string[:<span class="number">5</span>] + <span class="string">'AAA'</span> + string[<span class="number">5</span>:])</span></span></span><br></pre></td></tr></table></figure></p>
 <h2 id="capitalize()">capitalize()</h2><p>首字母大写</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefghijklmn'</span></span><br><span class="line">print(string.capitalize())</span><br></pre></td></tr></table></figure>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Abcdefghijklmn</span><br></pre></td></tr></table></figure></p>
-<p>####casefold<br>所有字母变小写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;BCDFbadfda&#39;&#10;print(string.casefold())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdfbadfda</span><br></pre></td></tr></table></figure></p>
-<p>####center<br>将字符串居中,并使用空格填充至width处</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;BCDFbadfda&#39;&#10;print(string.center(50))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BCDFbadfda</span><br></pre></td></tr></table></figure></p>
-<p>####count<br>返回子字符串在整个字符串中指定位置出现的次数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abcabcabcabcabcabcabcabcabcabc&#39;&#10;print(string.count(&#39;abc&#39;))&#10;print(string.count(&#39;abc&#39;, 3))&#10;print(string.count(&#39;abc&#39;, 3, 9))&#10;print(string.count(&#39;abc&#39;, 3, 12))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10&#10;9&#10;2&#10;3</span><br></pre></td></tr></table></figure></p>
-<p>####encode<br>按照encoding指定的编码格式对字符串进行编码</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;&#25105;&#26159;&#20320;&#29240;&#29240;&#39;&#10;print(string)&#10;print(string.encode(encoding=&#39;GBK&#39;))&#10;print(string.encode(encoding=&#39;utf-8&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#25105;&#26159;&#20320;&#29240;&#29240;&#10;b&#39;\xce\xd2\xca\xc7\xc4\xe3\xb0\xd6\xb0\xd6&#39;&#10;b&#39;\xe6\x88\x91\xe6\x98\xaf\xe4\xbd\xa0\xe7\x88\xb8\xe7\x88\xb8&#39;</span><br></pre></td></tr></table></figure></p>
-<p>####endwith<br>测试字符串是否以sub串结尾,可以指定位置</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abcdefg&#39;&#10;print(string.endswith(&#39;ef&#39;))&#10;print(string.endswith(&#39;fg&#39;))&#10;print(string.endswith(&#39;ef&#39;, 0, 6))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">False&#10;True&#10;True</span><br></pre></td></tr></table></figure></p>
-<p>####expendtabs<br>将字符串中的tab转换成空格,如果不指定默认是8</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;a\tbc\tdef\tghij&#39;&#10;print(string)&#10;print(string.expandtabs())&#10;print(string.expandtabs(4))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a&#9;bc&#9;def&#9;ghij&#10;a       bc      def     ghij&#10;a   bc  def ghij</span><br></pre></td></tr></table></figure></p>
-<p>####find<br>检查sub是否在字符串中,有则返回第一次出现的位置,否则返回-1<br>无论是否给出start end, 返回的都是绝对位置,而不是针对start的相对位置</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abc abcd abcde&#39;&#10;print(string.find(&#39;abc&#39;))&#10;print(string.find(&#39;abcd&#39;))&#10;print(string.find(&#39;abcd&#39;, 4, 8))&#10;print(string.find(&#39;abcd&#39;, 4, 7))&#10;print(string.find(&#39;dfd&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0&#10;4&#10;4&#10;-1&#10;-1</span><br></pre></td></tr></table></figure></p>
-<p>####index<br>与find方法类似,但是如果没找到则会抛出异常</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abc abcd abcde&#39;&#10;print(string.index(&#39;abc&#39;))&#10;print(string.index(&#39;abcd&#39;))&#10;print(string.index(&#39;dfd&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0&#10;4&#10;Traceback (most recent call last):&#10;  File &#34;/Users/huangtodd/PycharmProjects/helloworld/helloworld.py&#34;, line 4, in &#60;module&#62;&#10;    print(string.index(&#39;dfd&#39;))&#10;ValueError: substring not found</span><br></pre></td></tr></table></figure></p>
-<p>####isalnum<br>判断字符串是否仅仅包含字母和数组</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;123ab&#39;&#10;print(string.isalnum())&#10;string = &#39;ab123ab&#39;&#10;print(string.isalnum())&#10;string = &#39;abc 123ab&#39;&#10;print(string.isalnum())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;True&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####isalpha<br>判断字符串是否仅仅包含字母</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abfdf&#39;&#10;print(string.isalpha())&#10;string = &#39;ab123ab&#39;&#10;print(string.isalpha())&#10;string = &#39;abc 123ab&#39;&#10;print(string.isalpha())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####isdecimal<br>判断字符串是否仅仅包含十进制数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;123&#39;&#10;print(string.isdecimal())&#10;string = &#39;123.3&#39;&#10;print(string.isdecimal())&#10;string = &#39;0x123&#39;&#10;print(string.isdecimal())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####isdigit, isnumeric<br>和isdecimal基本类似都是判断是否是数字.<br>但是不同的是isnumeric可以判断其他语言的数字<br>byte object只能用isdigit</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">num = b&#34;123&#34;  # byte&#10;print(num.isdigit())  # True&#10;# print(num.isdecimal())  # AttributeError &#39;bytes&#39; object has no attribute &#39;isdecimal&#39;&#10;# print(num.isnumeric())  # AttributeError &#39;bytes&#39; object has no attribute &#39;isnumeric&#39;&#10;print()&#10;&#10;num = &#34;&#22235;&#34;  # &#27721;&#23383;&#10;print(num.isdigit())  # False&#10;print(num.isdecimal())  # False&#10;print(num.isnumeric())  # True</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;&#10;False&#10;False&#10;True</span><br></pre></td></tr></table></figure></p>
-<p>####islower, isupper<br>islower 判断字符串中包含字母是否全部为小写<br>isupper 判断字符串中包含字母是否全部为大写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;abcd&#39;&#10;print(string.islower())&#10;&#10;string = &#39;ABCD&#39;&#10;print(string.isupper())&#10;&#10;string = &#39;abcABC&#39;&#10;print(string.islower())&#10;print(string.isupper())&#10;&#10;string = &#39;123abc&#39;&#10;print(string.islower())&#10;print(string.isupper())&#10;&#10;string = &#39;123ABC&#39;&#10;print(string.islower())&#10;print(string.isupper())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;True&#10;False&#10;False&#10;True&#10;False&#10;False&#10;True</span><br></pre></td></tr></table></figure></p>
-<p>####isspace<br>字符串是否只包含空格</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39; &#39;&#10;print(string.isspace())&#10;&#10;string = &#39;123abc&#39;&#10;print(string.isspace())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####istitle<br>是否所有的单词仅仅首字母都大写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd&#39;&#10;print(string.istitle())&#10;&#10;string = &#39;ToddHuang&#39;&#10;print(string.istitle())&#10;&#10;string = &#39;Todd Huang&#39;&#10;print(string.istitle())&#10;&#10;string = &#39;Todd huang&#39;&#10;print(string.istitle())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">True&#10;False&#10;True&#10;False</span><br></pre></td></tr></table></figure></p>
-<p>####join<br>将字符串本身做为间隔插入到sub中去</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd&#39;&#10;print(string.join(&#39;|&#39;))&#10;print(string.join(&#39;||&#39;))&#10;print(string.join(&#39;|||&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">|&#10;|Todd|&#10;|Todd|Todd|</span><br></pre></td></tr></table></figure></p>
-<p>####ljust<br>左对齐后面补足width长度的空格</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd&#39;&#10;print(string.ljust(10))&#10;string = &#39;Todd123456&#39;&#10;print(string.ljust(10))&#10;string = &#39;Todd1234&#39;&#10;print(string.ljust(10))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Todd      &#10;Todd123456&#10;Todd1234</span><br></pre></td></tr></table></figure></p>
-<p>####lower, upper<br>lower所有字母小写<br>upper所有字母大写</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;ToddHuang&#39;&#10;print(string.lower())&#10;print(string.upper())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">toddhuang&#10;TODDHUANG</span><br></pre></td></tr></table></figure></p>
-<p>####lstrip, rstrip<br>lstrip 去除左边所有空格<br>rstrip 去除右边所有空格</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;          ToddHuang    &#39;&#10;print(string.lstrip())&#10;print(string.rstrip())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ToddHuang    &#10;          ToddHuang</span><br></pre></td></tr></table></figure></p>
-<p>####partition<br>找到sub并以sub为分隔将字符串变为3个元组</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd Tommy&#39;&#10;print(string.partition(&#39; &#39;))&#10;&#10;string = &#39;Todd Tommy Sam&#39;&#10;print(string.partition(&#39; &#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(&#39;Todd&#39;, &#39; &#39;, &#39;Tommy&#39;)&#10;(&#39;Todd&#39;, &#39; &#39;, &#39;Tommy Sam&#39;)</span><br></pre></td></tr></table></figure></p>
-<p>####replace<br>字符串替换,并可以指定替换次数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd Todd&#39;&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 0))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 1))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 2))&#10;print(string.replace(&#39;Todd&#39;, &#39;todd&#39;, 3))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">todd todd&#10;Todd Todd&#10;todd Todd&#10;todd todd&#10;todd todd</span><br></pre></td></tr></table></figure></p>
-<p>####rfind, rindex, rjust, rpartition<br>都是对应函数的右起操作</p>
-<p>####split<br>默认以空格来对字符串进行切片处理,切割成列表<br>也可是指定切割符号,也可是指定切割次数</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd Joyce Ketty&#39;&#10;print(string.split())&#10;print(string.split(&#39; &#39;, maxsplit=1))&#10;print(string.split(&#39; &#39;, 1))&#10;print(string.split(sep=None, maxsplit=1))&#10;&#10;string = &#39;Todd,Joyce,Ketty&#39;&#10;print(string.split(&#39;,&#39;))</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;Todd&#39;, &#39;Joyce&#39;, &#39;Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce Ketty&#39;]&#10;[&#39;Todd&#39;, &#39;Joyce&#39;, &#39;Ketty&#39;]</span><br></pre></td></tr></table></figure></p>
-<p>####splitlines<br>以换行符\n来切割字符串列表</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd\nJoyce\nKetty&#39;&#10;print(string.splitlines())</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string = &#39;Todd\nJoyce\nKetty&#39;&#10;print(string.splitlines())</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>####</p>
-<p>代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
-<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'toddhuang'</span></span><br><span class="line">print(string.capitalize())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Toddhuang</span><br></pre></td></tr></table></figure></p>
+<h2 id="casefold()">casefold()</h2><p>所有字母变小写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'ABCDEFG'</span></span><br><span class="line">print(string.casefold())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">abcdefg</span><br></pre></td></tr></table></figure></p>
+<h2 id="center(width[,_fillchar])">center(width[, fillchar])</h2><p>按照指定长度将字符串居中，默认空白处使用空格，也可以指定填充字符</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'toddhuang'</span></span><br><span class="line">print(string.center(<span class="number">30</span>))</span><br><span class="line">print(string.center(<span class="number">30</span>, <span class="string">'A'</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">          <span class="title">toddhuang</span>           </span><br><span class="line">AAAAAAAAAAtoddhuangAAAAAAAAAAA</span><br></pre></td></tr></table></figure></p>
+<h2 id="count(sub[,_start[,_end]])">count(sub[, start[, end]])</h2><p>返回子字符串在整个字符串中指定位置出现的次数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcabcabcabcabcabcabcabcabcabc'</span></span><br><span class="line">print(string.count(<span class="string">'abc'</span>))</span><br><span class="line">print(string.count(<span class="string">'abc'</span>, <span class="number">3</span>))</span><br><span class="line">print(string.count(<span class="string">'abc'</span>, <span class="number">3</span>, <span class="number">9</span>))</span><br><span class="line">print(string.count(<span class="string">'abc'</span>, <span class="number">3</span>, <span class="number">12</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="encode(encoding=”utf-8”,_errors=”strict”)">encode(encoding=”utf-8”, errors=”strict”)</h2><p>按照encoding指定的编码格式对字符串进行编码，这个暂时不是很清楚，跳过</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'我是你爸爸'</span></span><br><span class="line">print(string)</span><br><span class="line">print(string.encode(encoding=<span class="string">'GBK'</span>))</span><br><span class="line">print(string.encode(encoding=<span class="string">'utf-8'</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我是你爸爸</span><br><span class="line">b'<span class="command">\xce</span><span class="command">\xd</span>2<span class="command">\xca</span><span class="command">\xc</span>7<span class="command">\xc</span>4<span class="command">\xe</span>3<span class="command">\xb</span>0<span class="command">\xd</span>6<span class="command">\xb</span>0<span class="command">\xd</span>6'</span><br><span class="line">b'<span class="command">\xe</span>6<span class="command">\x</span>88<span class="command">\x</span>91<span class="command">\xe</span>6<span class="command">\x</span>98<span class="command">\xaf</span><span class="command">\xe</span>4<span class="command">\xbd</span><span class="command">\xa</span>0<span class="command">\xe</span>7<span class="command">\x</span>88<span class="command">\xb</span>8<span class="command">\xe</span>7<span class="command">\x</span>88<span class="command">\xb</span>8'</span><br></pre></td></tr></table></figure></p>
+<h2 id="endswith(suffix[,_start[,_end]])">endswith(suffix[, start[, end]])</h2><p>测试字符串是否以sub串结尾,可以指定位置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefg'</span></span><br><span class="line">print(string.endswith(<span class="string">'ef'</span>))</span><br><span class="line">print(string.endswith(<span class="string">'fg'</span>))</span><br><span class="line">print(string.endswith(<span class="string">'ef'</span>, <span class="number">0</span>, <span class="number">6</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="expandtabs(tabsize=8)">expandtabs(tabsize=8)</h2><p>将字符串中的tab转换成空格,如果不指定默认是8</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'a\tbc\tdef\tghij'</span></span><br><span class="line">print(string)</span><br><span class="line">print(string.expandtabs())</span><br><span class="line">print(string.expandtabs(<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a	bc	<span class="function"><span class="keyword">def</span>	<span class="title">ghij</span></span></span><br><span class="line">a       bc      <span class="function"><span class="keyword">def</span>     <span class="title">ghij</span></span></span><br><span class="line">a   bc  <span class="function"><span class="keyword">def</span> <span class="title">ghij</span></span></span><br></pre></td></tr></table></figure></p>
+<h2 id="find(sub[,_start[,_end]])">find(sub[, start[, end]])</h2><p>检查sub是否在字符串中,有则返回第一次出现的位置,否则返回-1<br>无论是否给出start end, 返回的都是绝对位置,而不是针对start的相对位置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abc abcd abcde'</span></span><br><span class="line">print(string.find(<span class="string">'abc'</span>))</span><br><span class="line">print(string.find(<span class="string">'abcd'</span>))</span><br><span class="line">print(string.find(<span class="string">'abcd'</span>, <span class="number">4</span>, <span class="number">8</span>))</span><br><span class="line">print(string.find(<span class="string">'abcd'</span>, <span class="number">4</span>, <span class="number">7</span>))</span><br><span class="line">print(string.find(<span class="string">'dfd'</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line">-<span class="number">1</span></span><br><span class="line">-<span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="index(sub[,_start[,_end]])">index(sub[, start[, end]])</h2><p>与find方法类似,但是如果没找到则会抛出异常</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abc abcd abcde'</span></span><br><span class="line">print(string.index(<span class="string">'abc'</span>))</span><br><span class="line">print(string.index(<span class="string">'abcd'</span>))</span><br><span class="line">print(string.index(<span class="string">'dfd'</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">0</span><br><span class="line"><span class="number">4</span></span><br><span class="line">Traceback (most recent <span class="keyword">call</span> <span class="keyword">last</span>):</span><br><span class="line">  <span class="keyword">File</span> <span class="string">"/Users/huangtodd/PycharmProjects/helloworld/helloworld.py"</span>, line <span class="number">4</span>, <span class="keyword">in</span> &lt;<span class="keyword">module</span>&gt;</span><br><span class="line">    print(<span class="keyword">string</span>.<span class="keyword">index</span>(<span class="string">'dfd'</span>))</span><br><span class="line">ValueError: <span class="keyword">substring</span> <span class="keyword">not</span> <span class="keyword">found</span></span></span><br></pre></td></tr></table></figure></p>
+<h2 id="isalnum()">isalnum()</h2><p>判断字符串是否仅仅包含字母和数组</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'123ab'</span></span><br><span class="line">print(string.isalnum())</span><br><span class="line">string = <span class="string">'ab123ab'</span></span><br><span class="line">print(string.isalnum())</span><br><span class="line">string = <span class="string">'abc 123ab'</span></span><br><span class="line">print(string.isalnum())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="isalpha()">isalpha()</h2><p>判断字符串是否仅仅包含字母</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abfdf'</span></span><br><span class="line">print(string.isalpha())</span><br><span class="line">string = <span class="string">'ab123ab'</span></span><br><span class="line">print(string.isalpha())</span><br><span class="line">string = <span class="string">'abc 123ab'</span></span><br><span class="line">print(string.isalpha())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="isdecimal()">isdecimal()</h2><p>判断字符串是否仅仅包含十进制数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'123'</span></span><br><span class="line">print(string.isdecimal())</span><br><span class="line">string = <span class="string">'123.3'</span></span><br><span class="line">print(string.isdecimal())</span><br><span class="line">string = <span class="string">'0x123'</span></span><br><span class="line">print(string.isdecimal())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="isdigit(),_isnumeric()">isdigit(), isnumeric()</h2><p>和isdecimal基本类似都是判断是否是数字.<br>但是不同的是isnumeric可以判断其他语言的数字<br>byte object只能用isdigit</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="string">b"123"</span>  <span class="comment"># byte</span></span><br><span class="line">print(num.isdigit())  <span class="comment"># True</span></span><br><span class="line"><span class="comment"># print(num.isdecimal())  # AttributeError 'bytes' object has no attribute 'isdecimal'</span></span><br><span class="line"><span class="comment"># print(num.isnumeric())  # AttributeError 'bytes' object has no attribute 'isnumeric'</span></span><br><span class="line">print()</span><br><span class="line"></span><br><span class="line">num = <span class="string">"四"</span>  <span class="comment"># 汉字</span></span><br><span class="line">print(num.isdigit())  <span class="comment"># False</span></span><br><span class="line">print(num.isdecimal())  <span class="comment"># False</span></span><br><span class="line">print(num.isnumeric())  <span class="comment"># True</span></span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="islower(),_isupper()">islower(), isupper()</h2><p>islower 判断字符串中包含字母是否全部为小写<br>isupper 判断字符串中包含字母是否全部为大写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcd'</span></span><br><span class="line">print(string.islower())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'ABCD'</span></span><br><span class="line">print(string.isupper())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'abcABC'</span></span><br><span class="line">print(string.islower())</span><br><span class="line">print(string.isupper())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'123abc'</span></span><br><span class="line">print(string.islower())</span><br><span class="line">print(string.isupper())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'123ABC'</span></span><br><span class="line">print(string.islower())</span><br><span class="line">print(string.isupper())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="isspace()">isspace()</h2><p>字符串是否只包含空格</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">' '</span></span><br><span class="line">print(string.isspace())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'123abc'</span></span><br><span class="line">print(string.isspace())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="istitle()">istitle()</h2><p>是否所有的单词仅仅首字母大写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd'</span></span><br><span class="line">print(string.istitle())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'ToddHuang'</span></span><br><span class="line">print(string.istitle())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'Todd Huang'</span></span><br><span class="line">print(string.istitle())</span><br><span class="line"></span><br><span class="line">string = <span class="string">'Todd huang'</span></span><br><span class="line">print(string.istitle())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="join(iterable)">join(iterable)</h2><p>将字符串本身做为间隔插入到iterable中去</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd'</span></span><br><span class="line">print(string.join(<span class="string">'|'</span>))</span><br><span class="line">print(string.join(<span class="string">'||'</span>))</span><br><span class="line">print(string.join(<span class="string">'|||'</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string"></span><br><span class="line"></span>|<span class="string">Todd</span>|</span><br><span class="line">|<span class="string">Todd</span>|<span class="string">Todd</span>|</span><br></pre></td></tr></table></figure></p>
+<h2 id="ljust(width[,_fillchar])">ljust(width[, fillchar])</h2><p>左对齐后面补足空格，保证长度等于width</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd'</span></span><br><span class="line">print(string.ljust(<span class="number">10</span>))</span><br><span class="line">string = <span class="string">'Todd123456'</span></span><br><span class="line">print(string.ljust(<span class="number">10</span>))</span><br><span class="line">string = <span class="string">'Todd1234'</span></span><br><span class="line">print(string.ljust(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">Todd</span>      </span><br><span class="line">Todd123456</span><br><span class="line">Todd1234</span><br></pre></td></tr></table></figure></p>
+<h2 id="lower(),_upper()">lower(), upper()</h2><p>lower 所有字母小写<br>upper 所有字母大写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'ToddHuang'</span></span><br><span class="line">print(string.lower())</span><br><span class="line">print(string.upper())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">toddhuang</span></span><br><span class="line">TODDHUANG</span><br></pre></td></tr></table></figure></p>
+<h2 id="lstrip([chars]),_lstrip([chars])">lstrip([chars]), lstrip([chars])</h2><p>lstrip 去除左边所有空格<br>rstrip 去除右边所有空格</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'          ToddHuang    '</span></span><br><span class="line">print(string.lstrip())</span><br><span class="line">print(string.rstrip())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">ToddHuang</span>    </span><br><span class="line">          ToddHuang</span><br></pre></td></tr></table></figure></p>
+<h2 id="partition(sep)">partition(sep)</h2><p>找到sep并以sep为分隔将字符串变为3个元组</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd Tommy'</span></span><br><span class="line">print(string.partition(<span class="string">' '</span>))</span><br><span class="line"></span><br><span class="line">string = <span class="string">'Todd Tommy Sam'</span></span><br><span class="line">print(string.partition(<span class="string">' '</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(<span class="string">'Todd'</span>, <span class="string">' '</span>, <span class="string">'Tommy'</span>)</span><br><span class="line">(<span class="string">'Todd'</span>, <span class="string">' '</span>, <span class="string">'Tommy Sam'</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="replace(old,_new[,_count])">replace(old, new[, count])</h2><p>字符串替换,并可以指定替换次数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd Todd'</span></span><br><span class="line">print(string.replace(<span class="string">'Todd'</span>, <span class="string">'todd'</span>))</span><br><span class="line">print(string.replace(<span class="string">'Todd'</span>, <span class="string">'todd'</span>, <span class="number">0</span>))</span><br><span class="line">print(string.replace(<span class="string">'Todd'</span>, <span class="string">'todd'</span>, <span class="number">1</span>))</span><br><span class="line">print(string.replace(<span class="string">'Todd'</span>, <span class="string">'todd'</span>, <span class="number">2</span>))</span><br><span class="line">print(string.replace(<span class="string">'Todd'</span>, <span class="string">'todd'</span>, <span class="number">3</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">todd</span> todd</span><br><span class="line">Todd Todd</span><br><span class="line">todd Todd</span><br><span class="line">todd todd</span><br><span class="line">todd todd</span><br></pre></td></tr></table></figure></p>
+<h2 id="rfind(sub[,_start[,_end]])">rfind(sub[, start[, end]])</h2><h2 id="rindex(sub[,_start[,_end]])">rindex(sub[, start[, end]])</h2><h2 id="rjust(width[,_fillchar])">rjust(width[, fillchar])</h2><h2 id="rpartition(sep)">rpartition(sep)</h2><p>都是对应函数的右起操作</p>
+<h2 id="split(sep=None,_maxsplit=-1)">split(sep=None, maxsplit=-1)</h2><p>默认以空格来对字符串进行切片处理,切割成列表<br>也可是指定切割符号,也可是指定切割次数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd Joyce Ketty'</span></span><br><span class="line">print(string.split())</span><br><span class="line">print(string.split(<span class="string">' '</span>, maxsplit=<span class="number">1</span>))</span><br><span class="line">print(string.split(<span class="string">' '</span>, <span class="number">1</span>))</span><br><span class="line">print(string.split(sep=<span class="keyword">None</span>, maxsplit=<span class="number">1</span>))</span><br><span class="line"></span><br><span class="line">string = <span class="string">'Todd,Joyce,Ketty'</span></span><br><span class="line">print(string.split(<span class="string">','</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">['Todd', 'Joyce', 'Ketty']</span><br><span class="line">['Todd', 'Joyce Ketty']</span><br><span class="line">['Todd', 'Joyce Ketty']</span><br><span class="line">['Todd', 'Joyce Ketty']</span><br><span class="line">['Todd', 'Joyce', 'Ketty']</span><br></pre></td></tr></table></figure></p>
+<h2 id="splitlines([keepends])">splitlines([keepends])</h2><p>以换行符\n来切割字符串列表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'Todd\nJoyce\nKetty'</span></span><br><span class="line">print(string.splitlines())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> = <span class="symbol">'Todd</span>\nJoyce\nKetty'</span><br><span class="line">print(<span class="built_in">string</span>.splitlines<span class="literal">()</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="startswith(prefix[,_start[,_end]])">startswith(prefix[, start[, end]])</h2><p>测试字符串是否以prefix开始,可以指定位置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'abcdefg'</span></span><br><span class="line">print(string.startswith(<span class="string">'ab'</span>))</span><br><span class="line">print(string.startswith(<span class="string">'bc'</span>))</span><br><span class="line">print(string.startswith(<span class="string">'bc'</span>, <span class="number">1</span>, <span class="number">6</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="strip([chars])">strip([chars])</h2><p>默认删除字符串前面和后面的空格，但是中间不删除，也是指定删除前后字符</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'    abc de fg    '</span></span><br><span class="line">print(string.strip())</span><br><span class="line">print(string.strip(<span class="string">' '</span>))</span><br><span class="line">string = <span class="string">'AAAAab cde fgAAAAAAAAAAAAAA'</span></span><br><span class="line">print(string.strip(<span class="string">'A'</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">abc de <span class="built_in">fg</span></span><br><span class="line">abc de <span class="built_in">fg</span></span><br><span class="line">ab cde <span class="built_in">fg</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="swapcase()">swapcase()</h2><p>翻转字符串中的大小写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'toddhuang'</span></span><br><span class="line">print(string.swapcase())</span><br><span class="line">string = <span class="string">'toddHUANG'</span></span><br><span class="line">print(string.swapcase())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">TODDHUANG</span></span><br><span class="line">TODDhuang</span><br></pre></td></tr></table></figure></p>
+<h2 id="title()">title()</h2><p>将所有的单词，都进行首字母大写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'todd huang'</span></span><br><span class="line">print(string.title())</span><br><span class="line">string = <span class="string">'todd HUANG'</span></span><br><span class="line">print(string.title())</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">Todd</span> Huang</span><br><span class="line">Todd Huang</span><br></pre></td></tr></table></figure></p>
+<h2 id="translate(map)">translate(map)</h2><p>根据定义好的字符映射表，来替换字符完成翻译<br>而map则由str.maketrans(‘a’, ‘b’)来定制<br>注意替换仅仅是字符对字符的替换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'aaabbbaabb'</span></span><br><span class="line">print(string.translate(str.maketrans(<span class="string">'a'</span>, <span class="string">'b'</span>)))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bbbbbbbbbb</span><br></pre></td></tr></table></figure></p>
+<h2 id="zfill(width)">zfill(width)</h2><p>返回长度为width的字符串，原字符串右对齐，前面用0填充</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">'12'</span></span><br><span class="line">print(string.zfill(<span class="number">8</span>))</span><br><span class="line">string = <span class="string">'-12'</span></span><br><span class="line">print(string.zfill(<span class="number">8</span>))</span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">00000012</span></span><br><span class="line">-<span class="number">0000012</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="format(args,_*kwargs)">format(<em>args, *</em>kwargs)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="format_map(mapping)">format_map(mapping)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>## </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>## </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Output<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://toddhuang.github.io/2015/08/13/python学习笔记3/" data-id="cidabpexd0001tcpglb2obe1z" class="article-share-link">Share</a>
+      <a data-url="http://toddhuang.github.io/2015/08/13/python学习笔记3/" data-id="cidafa3ch0001egpge65z8xj6" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
     </footer>
   </div>
   
@@ -247,23 +226,8 @@ Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print
           <aside id="sidebar">
   
     
-  
-    
-  
-    
-  
-    
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
+    <h3 class="widget-title">Recent posts</h3>
     <div class="widget">
       <ul>
         
@@ -280,6 +244,24 @@ Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print
           </li>
         
       </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Python/" style="font-size: 10px;">Python</a>
     </div>
   </div>
 
@@ -314,6 +296,13 @@ Output1234string = &apos;abcdefghijklmn&apos;print(string)print(string[:5])print
 
 
 <script src="/js/script.js" type="text/javascript"></script>
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
 
   </div>
 </body>
